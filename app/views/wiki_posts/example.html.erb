@@ -1,9 +1,15 @@
-<h1>Wiki Page title</h1>
-<p>Wiki Page Body </p>
+<h1 class="title">Wiki Page title</h1>
+<p class="description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac hendrerit quam. Donec et tortor eu diam ultrices iaculis id in sem. Vivamus sed enim vitae risus lacinia varius. Proin vel massa euismod, rutrum massa vel, venenatis mauris. Sed eget nulla libero. Nullam a turpis sit amet sapien scelerisque semper. Nulla facilisi. Mauris vitae ultrices nunc, in consectetur lacus. Integer condimentum ornare massa, nec commodo odio consequat ac. Vestibulum vel quam id augue hendrerit auctor sit amet eu lectus. Nunc id augue id neque vehicula blandit. Cras tristique ultricies lacus, vel facilisis elit consectetur in. Donec non nunc non tellus aliquam volutpat. Sed luctus lacus sit amet ipsum imperdiet, eu laoreet nulla facilisis. Nunc id augue id neque vehicula blandit. Cras tristique ultricies lacus, vel facilisis elit consectetur in.
+</p>
 
-<p>Wiki Page Author</p>
+<div class="meta">
+  <span class="author">Malcom G</span>
+  <span class="creation">WikiPost Creation Date</span>
+  <span class="update">WikiPost Last Update Date</span>
+</div>
 
-<div>
-  <span>WikiPost Author</span>
-  <span>WikiPost Creation Date</span>
+<div class="links">
+  <%= link_to "Home", welcome_index_path %>
+  <%= link_to "New Wiki Post", wiki_posts_path %>
 </div>
