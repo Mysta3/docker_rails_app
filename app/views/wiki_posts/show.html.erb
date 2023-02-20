@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @wiki_post %>
+
+<h1><%= @wiki_post.title %></h1>
+<div>
+  <%= link_to "Edit this wiki post", edit_wiki_post_path(@wiki_post) %> |
+  <%= link_to "Back to wiki posts", wiki_posts_path %>
+
+  <%= button_to "Destroy this wiki post", @wiki_post, method: :delete %>
+</div>
