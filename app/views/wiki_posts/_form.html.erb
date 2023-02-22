@@ -10,6 +10,17 @@
       </ul>
     </div>
   <% end %>
+  <%= form.label :title, "Post title" %>
+  <%= form.text_field :title%>
+
+  <%= form.label :image, "Image" %>
+  <%= form.file_field :image%>
+
+  <%= form.label :title, "Post description" %>
+  <%= form.text_field :description %>
+
+  <%= form.label :title, "Name?" %>
+  <%= form.text_field :author%>
 
   <div>
     <%= form.submit %>
