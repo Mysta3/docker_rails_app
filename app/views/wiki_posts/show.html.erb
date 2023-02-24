@@ -2,27 +2,23 @@
 
 <%= render @wiki_post %>
 
-<div>
-  <%= link_to "Edit this wiki post", edit_wiki_post_path(@wiki_post) %> |
-  <%= link_to "Back to wiki posts", wiki_posts_path %>
-
-  <%= button_to "Destroy this wiki post", @wiki_post, method: :delete %>
-</div>
 <h1>
   <%= @wiki_post.title %>
 </h1>
+
+<div>
 <p>
-  <%= @wiki_post.image %>
+  <%= image_tag @wiki_post.image %>
 </p>
 <p>
   <%= @wiki_post.description %>
 </p>
-<p>
-  <%= @wiki_post.author %>
-</p>
-<p>
-  <%= @wiki_post.created_at %>
-</p>
-<p>
-  <%= @wiki_post.updated_at %>
-</p>
+</div>
+
+<%= render "meta", wiki_post: @wiki_post %>
+
+<div>
+  <%= link_to "Edit this wiki post", edit_wiki_post_path(@wiki_post) %> |
+  <%= link_to "Back to wiki posts", wiki_posts_path %>
+  <%= button_to "Destroy this wiki post", @wiki_post, method: :delete %>
+</div>
